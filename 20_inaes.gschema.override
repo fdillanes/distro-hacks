@@ -1,0 +1,19 @@
+[org.gnome.desktop.background]
+picture-options='zoom'
+picture-uri='file:///usr/share/images/desktop-base/desktop-background.xml'
+
+[org.gnome.shell]
+enabled-extensions=['removeaccesibility@lomegor', 'dash-to-dock@micxgx.gmail.com']
+favorite-apps=['chromium.desktop', 'evolution.desktop', 'empathy.desktop', 'libreoffice-startcenter.desktop', 'hacksepa.desktop', 'hackpadron.desktop', 'hackcompartido.desktop', 'nautilus.desktop', 'remmina.desktop', 'rhythmbox.desktop', 'shotwell.desktop']
+
+[org.gnome.system.proxy]
+mode='manual'
+ignore-hosts=['localhost', '127.0.0.0/8', '172.5.0.0/16']
+use-same-proxy=true
+
+[org.gnome.system.proxy.http]
+enabled=true
+host='proxy.inaes'
+port=8080
+use-authentication=true
+
