@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Compartido
+Comment=Hack to get to the 'Compartido' Folder
+Exec=nautilus Compartido
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=gnome-fs-smb
+Categories=GNOME;GTK;Utility;Core;
+
