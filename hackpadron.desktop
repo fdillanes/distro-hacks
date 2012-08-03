@@ -1,0 +1,18 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=HackPadron
+Comment=Hack to get Padron Working, ask not
+Comment[es]=Padron 'portado' a Linux
+Comment[fr]=Padron 'porte' a Linux
+GenericName=Padron System
+GenericName[es]=Sistema Padron
+GenericName[fr]=Systeme Padron
+X-GNOME-FullName=Padron
+Exec=hackpadron.sh
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=hackpadron
+Categories=Office;
+StartupWMClass=Hack-Padron
+StartupNotify=true

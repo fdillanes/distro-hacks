@@ -1,0 +1,18 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=HackSepa
+Comment=Hack to get Sepa Working, ask not
+Comment[es]=Sepa 'portado' a Linux
+Comment[fr]=Sepa 'porte' a Linux
+GenericName=Sepa System
+GenericName[es]=Sistema Sepa
+GenericName[fr]=Systeme Sepa
+X-GNOME-FullName=Sepa
+Exec=hacksepa.sh
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=hacksepa
+Categories=Office;
+StartupWMClass=Hack-Sepa
+StartupNotify=true
