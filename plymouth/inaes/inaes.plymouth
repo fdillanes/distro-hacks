@@ -5,4 +5,4 @@ ModuleName=script
 
 [script]
 ImageDir=/usr/share/plymouth/themes/inaes
-ScriptFile=/usr/share/plymouth/themes/vizta/inaes.script
+ScriptFile=/usr/share/plymouth/themes/inaes/inaes.script

@@ -1,5 +1,5 @@
-for (i=0; i<20; i++){
-  spec[i].image = Image("spec" + (i % 6) + ".png");
+for (i=0; i<14; i++){
+  spec[i].image = Image("spec" + (i % 7) + ".png");
   spec[i].sprite = Sprite(spec[i].image);
   spec[i].sprite.SetOpacity (0.0);
   }
@@ -13,20 +13,20 @@ logo.sprite.SetZ (10000);
 progress = 0.0;
 
 fun refresh (){
-  inc = progress;
+  inc = progress*7;
 
   logo.sprite.SetOpacity (MathClamp((inc-0.7)/0.2, 0, 1));
 
   if (inc<0.8){
-    for (i=0; i<20; i++){
-      spec[i].sprite.SetX (Window.GetWidth()  / 2 - spec[i].image.GetWidth()  / 2 + Math.Sin(i*i+(inc*100+i*17)/20) * (0.8-inc)*Window.GetWidth()*0.3);
+    for (i=0; i<14; i++){
+      spec[i].sprite.SetX (Window.GetWidth()  / 2 - spec[i].image.GetWidth()  / 2 + Math.Sin(i*i+(inc*100+i*17)/14) * (0.8-inc)*Window.GetWidth()*0.3);
       spec[i].sprite.SetY (Window.GetHeight() / 2 - spec[i].image.GetHeight() / 2 + Math.Cos(i*i+(inc*100+i*5)/7) * (0.8-inc)*Window.GetHeight()*0.3);
       spec[i].sprite.SetZ (0);
       spec[i].sprite.SetOpacity (inc/0.8);
       }
     }
   else {
-    for (i=0; i<20; i++)
+    for (i=0; i<14; i++)
       spec[i].sprite.SetOpacity (Math.Clamp((0.9-inc)/0.1, 0, 1));
     }
 
