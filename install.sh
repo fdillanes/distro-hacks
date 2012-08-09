@@ -17,7 +17,7 @@ cp *.desktop /usr/share/applications/
 chmod +x *.sh
 cp hack*.sh /usr/bin/
 cp -r pam/*  /etc/
-
+cp  ntsswitch.conf /etc/
 # plymouth: boot theme
 cp -a plymouth/* /usr/share/plymouth/themes/
 plymouth-set-default-theme -R inaes
