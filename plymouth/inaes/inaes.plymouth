@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Inaes
+Description=Inaes Boot plugin.
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/inaes
+ScriptFile=/usr/share/plymouth/themes/vizta/inaes.script
