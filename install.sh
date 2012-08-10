@@ -38,6 +38,11 @@ ldconfig
 
 getent passwd xaiki || echo "Warning it looks like I couldn't configure samba !"
 
+# cups
+rm -rf /etc/cups/*
+cp cups/* /etc/cups
+/etc/init.d/cups restart
+
 # glib: some handy defaults
 cp glib-2.0/* /usr/share/glib-2.0/schemas/
 glib-compile-schemas /usr/share/glib-2.0/schemas/
