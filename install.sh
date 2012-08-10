@@ -2,15 +2,31 @@
 
 set -e
 
-#pushd /etc && git commit -asm "pre-inaes-hack-install commit"; popd
+d=`pwd`
+
+#
+./install-all-pkgs.sh
+
+cd /etc/ && git commit -asm "pre-inaes-hack-install commit"; cd $d
+
+# ntp: stay on time
+cp ntp/ntp.conf /etc/ntp.conf
+/etc/init.d/ntp restart
+
+# pam/nss: log in to windows domain
+cp -r pam/*  /etc/
+cp  nsswitch.conf /etc/
 
 # samba: install and join domain
 cp samba/smb.conf /etc/samba/smb.conf
 # net ads join
 
-# ntp: stay on time
-cp ntp/ntp.conf /etc/ntp.conf
-/etc/init.d/ntp restart
+# restart everything
+ldconfig
+/etc/init.d samba restart
+/etc/init.d winbind restart
+
+getent passwd xaiki || echo "Warning it looks like I couldn't configure samba !"
 
 # glib: some handy defaults
 cp glib-2.0/* /usr/share/glib-2.0/schemas/
@@ -24,10 +40,6 @@ cp -r gdm3/* /etc/gdm3/
 cp *.desktop /usr/share/applications/
 chmod +x *.sh
 cp hack*.sh /usr/bin/
-
-# pam/nss: log in to windows domain
-cp -r pam/*  /etc/
-cp  nsswitch.conf /etc/
 
 # plymouth: boot theme
 cp -a plymouth/* /usr/share/plymouth/themes/
@@ -47,4 +59,6 @@ update-grub
 #umount /home || true
 #mount /home
 
-#pushd /etc && git commit -asm "post-inaes-hack-install commit"; popd
+cd /etc/ && git commit -asm "post-inaes-hack-install commit"; cd $d
+
+echo "all done"
