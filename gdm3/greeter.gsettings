@@ -9,9 +9,9 @@
 # [org.gnome.desktop.interface]
 # gtk-theme='Adwaita'
 #  - Use another background
-# [org.gnome.desktop.background]
-# picture-uri='file:///usr/share/themes/Adwaita/backgrounds/stripes.jpg'
-# picture-options='zoom'
+[org.gnome.desktop.background]
+ picture-uri='file:///usr/share/plymouth/themes/inaes/logo.png'
+ picture-options='zoom'
 #  - Or no background at all
 # [org.gnome.desktop.background]
 # picture-options='none'
@@ -28,7 +28,7 @@ session-name='gdm-fallback'
 # Login manager options
 # =====================
 [org.gnome.login-screen]
-logo='/usr/share/icons/gnome/48x48/places/inaes.png'
+logo='/usr/share/plymouth/themes/inaes/logo-instit.png'
 fallback-logo='/usr/share/icons/gnome/48x48/places/debian-swirl.png'
 banner-message-enable=true
 banner-message-text='Bienvenido al INAES, ingrese su usuario y clave'
