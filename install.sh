@@ -47,6 +47,9 @@ cp cups/* /etc/cups
 cp glib-2.0/* /usr/share/glib-2.0/schemas/
 glib-compile-schemas /usr/share/glib-2.0/schemas/
 
+# install some gnome-shell extensions
+cp -a gnome-shell/* /usr/share/gnome-shell/extensions/
+
 # gdm3: greeter
 cp -r gdm3/* /etc/gdm3/
 /etc/init.d/gdm3 force-reload
