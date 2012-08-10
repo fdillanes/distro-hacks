@@ -17,7 +17,7 @@ user=$1
 
 mkdir -p /home/INACYM98
 
-cd /etc/ && git commit -asm "pre-inaes-hack-install commit"; cd $d
+cd /etc/ && git commit -asm "pre-inaes-hack-install commit" || echo "no pending changes"; cd $d
 
 # ntp: stay on time
 cp ntp/ntp.conf /etc/ntp.conf
