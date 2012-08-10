@@ -40,7 +40,7 @@ getent passwd xaiki || echo "Warning it looks like I couldn't configure samba !"
 
 # cups
 rm -rf /etc/cups/*
-cp cups/* /etc/cups
+cp -a cups/* /etc/cups
 /etc/init.d/cups restart
 
 # glib: some handy defaults

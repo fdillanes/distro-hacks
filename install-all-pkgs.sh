@@ -1,6 +1,7 @@
 #!/bin/sh
 aptitude install \
     gnome \
+    gnome-shell-extensions \
     chromium \
     chromium-browser-l10n \
     chromium-inspector \
@@ -23,6 +24,7 @@ aptitude install \
     plymouth-drm \
     rdesktop \
     samba \
+    samba-common-bin \
     smbclient \
     strace \
     unrar \
