@@ -1,11 +1,20 @@
 #!/bin/sh
 
 set -e
+set -x
 
 d=`pwd`
 
+if test -z $1; then
+	echo "need an argument"
+	return
+fi
+user=$1
+
 #
 ./install-all-pkgs.sh
+
+mkdir -p /home/INACYM98
 
 cd /etc/ && git commit -asm "pre-inaes-hack-install commit"; cd $d
 
@@ -19,12 +28,12 @@ cp  nsswitch.conf /etc/
 
 # samba: install and join domain
 cp samba/smb.conf /etc/samba/smb.conf
-# net ads join
+net ads join -k -U $user
 
 # restart everything
 ldconfig
-/etc/init.d samba restart
-/etc/init.d winbind restart
+/etc/init.d/samba restart
+/etc/init.d/winbind restart
 
 getent passwd xaiki || echo "Warning it looks like I couldn't configure samba !"
 
