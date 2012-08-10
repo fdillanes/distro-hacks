@@ -36,15 +36,15 @@ perl -pi -e 'm/^\s*GRUB_CMDLINE_LINUX_DEFAULT.*splash.*\"/ || s/^(\s*GRUB_CMDLIN
 update-grub
 
 # nfs: mount /home
-nfsip="172.5.30.1"
-grep nfshome /etc/hosts || echo "$nfsip nfshome" >> /etc/hosts
-if grep nfshome /etc/fstab; then
-	echo "nfshome already configured" 
-else
-	perl -pi -e 's,^(.*\s+/home\s+.*)$,#removedbyhack# \1,' /etc/fstab
-	echo "nfshome:/home /home nfs defaults 0 0" >> /etc/fstab
-fi
-umount /home || true
-mount /home
+#nfsip="172.5.30.1"
+#grep nfshome /etc/hosts || echo "$nfsip nfshome" >> /etc/hosts
+#if grep nfshome /etc/fstab; then
+#	echo "nfshome already configured" 
+#else
+#	perl -pi -e 's,^(.*\s+/home\s+.*)$,#removedbyhack# \1,' /etc/fstab
+#	echo "nfshome:/home /home nfs defaults 0 0" >> /etc/fstab
+#fi
+#umount /home || true
+#mount /home
 
 #pushd /etc && git commit -asm "post-inaes-hack-install commit"; popd
