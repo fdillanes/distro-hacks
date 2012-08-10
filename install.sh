@@ -50,9 +50,9 @@ cp *.desktop /usr/share/applications/
 chmod +x *.sh
 cp hack*.sh /usr/bin/
 
-# plymouth: boot theme
+# plymouth: boot theme, don't set inaes for now
 cp -a plymouth/* /usr/share/plymouth/themes/
-plymouth-set-default-theme -R inaes
+plymouth-set-default-theme -R joy
 perl -pi -e 'm/^\s*GRUB_CMDLINE_LINUX_DEFAULT.*splash.*\"/ || s/^(\s*GRUB_CMDLINE_LINUX_DEFAULT.*)\"\S*$/\1 splash\"/' /etc/default/grub
 update-grub
 

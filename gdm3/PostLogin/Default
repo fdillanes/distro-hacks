@@ -1,3 +1,2 @@
 #!/bin/sh
 
-zenity --info --text "hola $USER -- $USERNAME ? $ENV"
