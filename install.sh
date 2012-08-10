@@ -47,13 +47,14 @@ cp -r gdm3/* /etc/gdm3/
 /etc/init.d/gdm3 force-reload
 
 # applications: ugly hacks to get windows apps runing
-cp *.desktop /usr/share/applications/
-chmod +x *.sh
-cp hack*.sh /usr/bin/
+cp apps/*.desktop /usr/share/applications/
+cp apps/*.png     /usr/share/icons/hicolor/24x24/apps/
+chmod +x apps/*.sh
+cp apps/hack*.sh /usr/bin/
 
-# plymouth: boot theme, don't set inaes for now
+# plymouth: boot theme
 cp -a plymouth/* /usr/share/plymouth/themes/
-plymouth-set-default-theme -R joy
+plymouth-set-default-theme -R inaes
 perl -pi -e 'm/^\s*GRUB_CMDLINE_LINUX_DEFAULT.*splash.*\"/ || s/^(\s*GRUB_CMDLINE_LINUX_DEFAULT.*)\"\S*$/\1 splash\"/' /etc/default/grub
 update-grub
 

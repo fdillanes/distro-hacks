@@ -13,7 +13,7 @@ logo.sprite.SetZ (10000);
 progress = 0.0;
 
 fun refresh (){
-  inc = progress*7;
+  inc = progress;
 
   logo.sprite.SetOpacity (MathClamp((inc-0.7)/0.2, 0, 1));
 
