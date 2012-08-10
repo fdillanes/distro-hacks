@@ -7,6 +7,7 @@ d=`pwd`
 
 if test -z $1; then
 	echo "need an argument"
+        echo "usage: $0 user"
 	return
 fi
 user=$1
