@@ -56,9 +56,10 @@ cp -a gnome-shell/* /usr/share/gnome-shell/extensions/
 cp -r gdm3/* /etc/gdm3/
 /etc/init.d/gdm3 force-reload
 
-# applications: ugly hacks to get windows apps runing
+# applications: ugly hacks to get windows apps running
 cp apps/*.desktop /usr/share/applications/
 cp apps/*.png     /usr/share/icons/hicolor/24x24/apps/
+gtk-update-icon-cache /usr/share/icons/hicolor/
 chmod +x apps/*.sh
 cp apps/hack*.sh /usr/bin/
 
