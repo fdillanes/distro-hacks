@@ -8,7 +8,7 @@ favorite-apps=['chromium.desktop', 'evolution.desktop', 'empathy.desktop', 'libr
 
 [org.gnome.system.proxy]
 mode='manual'
-ignore-hosts=['localhost', '127.0.0.0/8', '172.5.0.0/16']
+ignore-hosts=['localhost', '127.0.0.0/8', '172.5.0.0/16', '*.inaes']
 use-same-proxy=true
 
 [org.gnome.system.proxy.http]
@@ -17,3 +17,10 @@ host='proxy.inaes'
 port=8080
 use-authentication=true
 
+[org.gnome.system.proxy.https]
+host='proxy.inaes'
+port=8080
+
+[org.gnome.system.proxy.ftp]
+host='proxy.inaes'
+port=8080
