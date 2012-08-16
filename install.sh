@@ -1,8 +1,6 @@
 #!/bin/sh
 
 set -e
-set -x
-
 d=`pwd`
 
 if test -z $1; then
@@ -11,6 +9,8 @@ if test -z $1; then
 	return
 fi
 user=$1
+
+set -x
 
 #
 ./install-all-pkgs.sh
@@ -37,6 +37,8 @@ ldconfig
 /etc/init.d/winbind restart
 
 getent passwd xaiki || echo "Warning it looks like I couldn't configure samba !"
+
+./install-all-pkgs-gnome.sh
 
 # cups
 rm -rf /etc/cups/*
@@ -81,3 +83,4 @@ update-grub
 cd /etc/ && git commit -asm "post-inaes-hack-install commit"; cd $d
 
 echo "all done"
+reboot
