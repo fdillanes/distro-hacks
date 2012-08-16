@@ -6,6 +6,8 @@ aptitude install \
     chromium-browser-l10n \
     chromium-inspector \
     chromium-l10n \
+    libreoffice-gnome \
+    libreoffice-l10n-es \
     cifs-utils \
     cups \
     emacs23-nox \
