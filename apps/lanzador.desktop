@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon[es_AR]=iceweasel
+Name[es_AR]=lanzador de información 
+Exec=iceweasel --new-tab http://sistemas.produccion.inaes/lanzador/
+Comment[es_AR]=acceso directo a lanzador
+Name=lanzador de información 
+Comment=acceso directo a lanzador
+Icon=iceweasel
