@@ -1,0 +1,1 @@
+TODO: cambiar iconos, arreglar el array en glib2 overrideschemas
