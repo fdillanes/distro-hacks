@@ -4,7 +4,7 @@ picture-uri='file:///usr/share/images/desktop-base/desktop-background.xml'
 
 [org.gnome.shell]
 enabled-extensions=['removeaccesibility@lomegor', 'dash-to-dock@micxgx.gmail.com']
-favorite-apps=['chromium.desktop', 'evolution.desktop', 'empathy.desktop', 'libreoffice-startcenter.desktop', 'hacksepa.desktop', 'hackpadron.desktop', 'hackcompartido.desktop', 'nautilus.desktop', 'rhythmbox.desktop', 'shotwell.desktop']
+favorite-apps=['chromium.desktop', 'evolution.desktop', 'empathy.desktop', 'libreoffice-startcenter.desktop', 'hacksepa.desktop', 'hackpadron.desktop', 'hackcompartido.desktop', 'nautilus.desktop', 'internos2.desktop', 'lanzador.desktop', 'PanelDeControl.desktop', 'Reempadronamiento.desktop', 'rhythmbox.desktop', 'shotwell.desktop']
 
 [org.gnome.system.proxy]
 mode='manual'
