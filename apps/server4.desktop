@@ -1,13 +1,14 @@
-#!/usr/bin/env xdg-open
-
 [Desktop Entry]
 Version=1.0
 Type=Application
 Terminal=false
-Icon[es_AR]=javaws
 Name[es_AR]=server4
 Exec=iceweasel --new-tab http://server4.usuarios.inaes/
 Comment[es_AR]=acceso directo a server 4
 Name=server4
 Comment=acceso directo a server 4
-Icon=iceweasel
+Icon=get_infored
+Categories=Office;
+StartupWMClass=server4
+StartupNotify=true
+
