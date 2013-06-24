@@ -1,12 +1,14 @@
-#!/usr/bin/env xdg-open
 [Desktop Entry]
 Version=1.0
 Type=Application
 Terminal=false
-Icon[es_AR]=iceweasel
 Name[es_AR]=reempa
 Exec=iceweasel --new-tab http://sistemas.produccion.inaes/wa_reempadronamiento/
 Comment[es_AR]=acceso directo a reempadronamiento
 Name=reempa
 Comment=acceso directo a reempadronamiento
-Icon=iceweasel
+Icon=info
+Categories=Office;
+StartupWMClass=reempa
+StartupNotify=true
+
