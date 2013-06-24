@@ -1,5 +1,3 @@
-#!/usr/bin/env xdg-open
-
 [Desktop Entry]
 Version=1.0
 Type=Application
@@ -9,25 +7,11 @@ Name[es_AR]=INTERNOS
 Exec=iceweasel --new-tab http://server4.usuarios.inaes/internos/
 Comment[es_AR]=acceso directo a internos
 Name=INTERNOS
-Comment=acceso directo a internos
-Icon=iceweasel
+Comment=acceso directo a internos del inaes
+Icon=phone
+Categories=Office;
+StartupWMClass=internos
+StartupNotify=true
 
-#[Desktop Entry]
-#Encoding=UTF-8
-#Name=Padron
-#Comment=Hack to get Padron Working, ask not
-#Comment[es]=Padron 'portado' a Linux
-#Comment[fr]=Padron 'porte' a Linux
-#GenericName=Padron System
-#GenericName[es]=Sistema Padron
-#GenericName[fr]=Systeme Padron
-#X-GNOME-FullName=Padron
-#Exec=hackpadron.sh
-#Terminal=false
-#X-MultipleArgs=false
-#Type=Application
-#Icon=hackpadron
-#Categories=Office;
-#StartupWMClass=Hack-Padron
-#StartupNotify=true
+
 
