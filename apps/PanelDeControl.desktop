@@ -1,13 +1,14 @@
-#!/usr/bin/env xdg-open
-
 [Desktop Entry]
 Version=1.0
 Type=Application
 Terminal=false
-Icon[es_AR]=logview
 Exec=iceweasel --new-tab http://sistemas.produccion.inaes/WA_PanelControl/PaginaInicio.aspx
 Comment[es_AR]=acceso directo al panel de control
 Name[es_AR]=panel de control
 Name=panel de control
 Comment=acceso directo al panel de control
-Icon=iceweasel
+Icon=control_panel3
+Categories=Office;
+StartupWMClass=PanelDeControl
+StartupNotify=true
+
