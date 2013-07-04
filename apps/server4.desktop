@@ -1,13 +1,12 @@
 [Desktop Entry]
-Version=1.0
 Type=Application
 Terminal=false
 Name[es_AR]=server4
 Exec=iceweasel --new-tab http://server4.usuarios.inaes/
-Comment[es_AR]=acceso directo a server 4
+Comment[es_AR]=acceso directo a aplicaciones de empleados INAES
 Name=server4
-Comment=acceso directo a server 4
-Icon=get_infored
+Comment=acceso directo a aplicaciones de empleados INAES
+Icon=goa-account
 Categories=Office;
 StartupWMClass=server4
 StartupNotify=true
