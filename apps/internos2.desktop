@@ -1,14 +1,13 @@
 [Desktop Entry]
-Version=1.0
 Type=Application
 Terminal=false
-Icon[es_AR]=gpk-service-pack
-Name[es_AR]=INTERNOS
+GenericName[es_AR]=INTERNOS
+GenericName=INTERNOS
 Exec=iceweasel --new-tab http://server4.usuarios.inaes/internos/
 Comment[es_AR]=acceso directo a internos
 Name=INTERNOS
 Comment=acceso directo a internos del inaes
-Icon=phone
+Icon=alacarte
 Categories=Office;
 StartupWMClass=internos
 StartupNotify=true
