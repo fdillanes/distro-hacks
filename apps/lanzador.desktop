@@ -1,13 +1,12 @@
 [Desktop Entry]
-Version=1.0
 Type=Application
 Terminal=false
 Name[es_AR]=lanzador de información 
+Name=lanzador de información 
 Exec=iceweasel --new-tab http://sistemas.produccion.inaes/lanzador/
 Comment[es_AR]=acceso directo a lanzador
-Name=lanzador de información 
 Comment=acceso directo a lanzador
-Icon=get_info
+Icon=baobab
 Categories=Office;
 StartupWMClass=lanzador
 StartupNotify=true
