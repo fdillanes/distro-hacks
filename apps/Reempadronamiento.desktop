@@ -1,14 +1,13 @@
 [Desktop Entry]
-Version=1.0
 Type=Application
 Terminal=false
-Name[es_AR]=reempa
+Name[es_AR]=Reempadronamiento
 Exec=iceweasel --new-tab http://sistemas.produccion.inaes/wa_reempadronamiento/
 Comment[es_AR]=acceso directo a reempadronamiento
-Name=reempa
+Name=Reempadronamiento
 Comment=acceso directo a reempadronamiento
-Icon=info
+Icon=gnome-panel-launcher
 Categories=Office;
-StartupWMClass=reempa
+StartupWMClass=reempadronamiento
 StartupNotify=true
 
