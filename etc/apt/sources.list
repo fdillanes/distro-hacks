@@ -1,0 +1,15 @@
+# 
+
+# deb cdrom:[Debian GNU/Linux testing _Wheezy_ - Official Snapshot amd64 NETINST Binary-1 20120731-09:15]/ wheezy main
+
+#deb cdrom:[Debian GNU/Linux testing _Wheezy_ - Official Snapshot amd64 NETINST Binary-1 20120731-09:15]/ wheezy main
+
+deb http://approx.inaes:9999/debian/ wheezy main contrib non-free
+
+# Line commented out by installer because it failed to verify:
+#deb http://security.debian.org/ wheezy/updates main
+# Line commented out by installer because it failed to verify:
+#deb-src http://security.debian.org/ wheezy/updates main
+
+# qGIS
+deb http://approx.inaes:9999/gis wheezy main
